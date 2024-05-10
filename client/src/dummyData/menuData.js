@@ -1,52 +1,28 @@
 export const MenuData = [
   {
     title: "Overview",
-    path: "/overview",
+    path: "#",
   },
   {
     title: "Boards",
-    path: "/boards",
+    path: "#",
     submenus: [
       {
-        title: "Taskboard",
-        path: "/boards/taskboard",
+        title: "Sprints",
+        path: "/departamento_a/project_1/board/sprints",
         icon: "computer",
       },
       {
         title: "Backlog",
-        path: "/boards/backlog",
+        path: "/departamento_a/project_1/board/backlog",
         icon: "shopping_bag",
       },
+
       {
-        title: "Capacity",
-        path: "/boards/capacity",
-        icon: "book",
-      },
-      {
-        title: "Sprint Goal",
-        path: "/boards/sprint_goal",
+        title: "Retrospective",
+        path: "/departamento_a/project_1/board/retrospective",
         icon: "book",
       },
     ],
   },
-  // {
-  //   title: "Services",
-  //   path: "/services",
-  //   submenus: [
-  //     {
-  //       title: "Repair",
-  //       path: "/services/repair",
-  //       icon: "build",
-  //     },
-  //     {
-  //       title: "Consulting",
-  //       path: "/services/consulting",
-  //       icon: "business_center",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "About Us",
-  //   path: "/about",
-  // },
 ];

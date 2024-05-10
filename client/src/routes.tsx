@@ -1,20 +1,32 @@
 import React from "react";
 import Homepage from "./pages/homepage/Homepage";
 import Overview from "./pages/overview/Overview";
-import Boards from "./pages/boards/Boards";
-import Taskboard from "./pages/boards/taskboard/Taskboard";
+import Board from "./pages/boards/Board";
 import Backlog from "./pages/boards/backlog/Backlog";
 import SprintGoal from "./pages/boards/sprintGoal/SprintGoal";
 import Capacity from "./pages/boards/capacity/Capacity";
+import Sprints from "./pages/boards/sprints/Sprints";
+import Retrospective from "./pages/boards/retrospective/Retrospective";
 
 export const RouteList = [
-  { path: "/", component: <Homepage /> },
+  { path: "/:groupName", component: <Homepage /> },
 
-  { path: "/overview", component: <Overview /> },
+  { path: "/:groupName/:projectName/overview", component: <Overview /> },
 
-  { path: "/boards", component: <Boards /> },
-  { path: "boards/taskboard", component: <Taskboard /> },
-  { path: "boards/backlog", component: <Backlog /> },
-  { path: "boards/capacity", component: <Capacity /> },
-  { path: "boards/sprint_goal", component: <SprintGoal /> },
+  { path: "/:groupName/:projectName/board", component: <Board /> },
+  {
+    path: "/:groupName/:projectName/board/sprints",
+    component: <Sprints />,
+  },
+  { path: "/:groupName/:projectName/board/backlog", component: <Backlog /> },
+  // { path: "/:groupName/:projectName/board/capacity", component: <Capacity /> },
+
+  // {
+  //   path: "/:groupName/:projectName/board/sprint_goal",
+  //   component: <SprintGoal />,
+  // },
+  {
+    path: "/:groupName/:projectName/board/retrospective",
+    component: <Retrospective />,
+  },
 ];

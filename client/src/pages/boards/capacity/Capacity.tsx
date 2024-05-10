@@ -1,7 +1,9 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const Capacity = () => {
-  return <div>Capacity</div>;
+  const { projectName } = useParams();
+  return <div>Capacity {projectName}</div>;
 };
 
 export default Capacity;

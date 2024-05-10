@@ -4,7 +4,7 @@ import Logo from "~/assets/smileyFace.jfif";
 
 const LogoComponent = () => {
   return (
-    <Link to={"/"}>
+    <Link to={"/departamento_a"}>
       <StyledLogoWrapper>
         <StyledLogo onClick={() => {}} src={`${Logo}`} alt={"Control Risks"} />
       </StyledLogoWrapper>

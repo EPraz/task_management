@@ -1,7 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const SprintGoal = () => {
-  return <div>SprintGoal</div>;
+  const { projectName } = useParams();
+
+  return <div>SprintGoal {projectName}</div>;
 };
 
 export default SprintGoal;
